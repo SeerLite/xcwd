@@ -57,7 +57,7 @@ int nameCmp(const void *p1, const void *p2)
 
 int ppidCmp(const void *p1, const void *p2)
 {
-    return ((struct proc_s *)p1)->ppid - ((struct proc_s *)p2)->ppid;
+    return ((struct proc_s *)p2)->ppid - ((struct proc_s *)p1)->ppid;
 }
 
 static Window focusedWindow()
